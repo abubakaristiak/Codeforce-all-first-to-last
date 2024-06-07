@@ -1,4 +1,4 @@
-//https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/A
+//https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/D
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -9,10 +9,11 @@ int main()
     for(int i=0; i<n; i++){
         cin >> ar[i];
     }
-    long long int sum = 0; 
+
     for(int i=0; i<n; i++){
-        sum +=ar[i];
+        if(ar[i] <= 10){
+            cout << "A["<<i<<"]" <<" = "<< ar[i]<<endl;
+        }
     }
-    cout << abs(sum); 
     return 0;
 }
